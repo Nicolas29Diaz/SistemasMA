@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 4239520081086740138}
   - component: {fileID: 6046111640093437236}
   m_Layer: 5
-  m_Name: Canvas Yaguarete 1
+  m_Name: Canvas Tamarino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -416,7 +416,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7a8c455ea90412f41b48fea9ea9f69ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3896482a1d02ded4d86dc016a573fcc9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -613,8 +613,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 114, y: 47}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 109.82957, y: 57.856693}
+  m_SizeDelta: {x: 170.5051, y: 118.8253}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8069058036970309561
 CanvasRenderer:
@@ -644,7 +644,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 91f9fc3390c23d84e9d075b0a33603b2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a89d191cc14569d4dba0f9856bf47c60, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
