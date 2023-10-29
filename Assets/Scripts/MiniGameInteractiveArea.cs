@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class MiniGameInteractiveArea : MonoBehaviour
 {
+    public bool isStart;
+
     public GameObject TileMapMinigame;
     public GameObject ActualTileMap;
     public Transform SpawnMinigame;
-    private Transform LastPosition;
-    public bool isStart;
-
-
-
+    public Transform LastPosition;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,6 +18,12 @@ public class MiniGameInteractiveArea : MonoBehaviour
             collision.GetComponent<BotonInteractivo>().interactMode = true;
             collision.GetComponent<BotonInteractivo>().interactableObject = this.gameObject;
             LastPosition = collision.transform;
+
+        }
+        else if (collision.tag == "Pickable")
+        {
+            gameObject.GetComponent<BrasilMinijuego_1>().CheckAnswer(collision.gameObject.GetComponent<BananasMovimiento>().id);
+            
             
         }
     }
@@ -29,8 +33,9 @@ public class MiniGameInteractiveArea : MonoBehaviour
         if (collision.tag == "Player")
         {
             collision.GetComponent<BotonInteractivo>().interactMode = false;
-            LastPosition = null;
+            //LastPosition = null;
             isStart = false;
         }
+        
     }
 }

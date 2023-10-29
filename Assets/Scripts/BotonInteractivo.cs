@@ -6,6 +6,8 @@ public class BotonInteractivo : MonoBehaviour
 {
     public bool interactMode = false;
     public GameObject interactableObject;
+    [HideInInspector]
+    public bool isPress;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,26 +21,15 @@ public class BotonInteractivo : MonoBehaviour
         {
             if (interactMode)
             {
-                StartMinigame(interactableObject.GetComponent<MiniGameInteractiveArea>().SpawnMinigame.transform,
-                    interactableObject.GetComponent<MiniGameInteractiveArea>().TileMapMinigame,
-                    interactableObject.GetComponent<MiniGameInteractiveArea>().ActualTileMap);
+                isPress = true;
+                GameObject.Find("Tamarino").GetComponent<BrasilMinijuego_1>().CheckMinigame();
+                //Debug.Log(GameObject.Find("Tamarino").GetComponent<BrasilMinijuego_1>().MinigameState);
             }
+        }else
+        {
+            isPress = false;
         }
     }
 
-    public void StartMinigame(Transform spawn, GameObject minigameTilemap, GameObject actualTilemap)
-    {
-        interactableObject.GetComponent<MiniGameInteractiveArea>().isStart = true;
-        transform.position = spawn.position;
-        actualTilemap.SetActive(false);
-        minigameTilemap.SetActive(true);
-
-    }
-
-    public void EndMinigame(Transform lastPosition, GameObject mapTilemap, GameObject minigameTilemap)
-    {
-        transform.position = lastPosition.position;
-        minigameTilemap.SetActive(false);
-        mapTilemap.SetActive(true);
-    }
+    
 }
