@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PuzzleCard
   - Pickable
+  - Recolectable
   layers:
   - Default
   - TransparentFX
