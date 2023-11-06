@@ -6,15 +6,16 @@ public class QuizDB : MonoBehaviour
 {
     [SerializeField] private List<Question> n_questionList = null;
 
+    [Header("Canvas")]
     public GameObject canvasPreguntas;
-    public GameObject actividad;
-    public GameObject mapa;
+    public GameObject canvasOsorio;
 
+    [Header("UI")]
     public GameObject panel1;
     public GameObject panel2;
     public GameObject panel3;
-
-    public GameObject player;
+    public GameObject panelAntes;
+    public GameObject panelDespues;
 
     public Question GetQuestion(bool remove = true)
     {
@@ -46,8 +47,9 @@ public class QuizDB : MonoBehaviour
     public void ApagarCanvas()
     {
         canvasPreguntas.SetActive(false);
-        actividad.SetActive(false);
-        mapa.SetActive(true);
-        player.SetActive(true);
+        canvasOsorio.SetActive(true);
+
+        panelAntes.SetActive(false);
+        panelDespues.SetActive(true);
     }
 }

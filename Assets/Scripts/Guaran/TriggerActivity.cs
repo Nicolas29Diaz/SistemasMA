@@ -6,6 +6,9 @@ public class TriggerActivity : MonoBehaviour
 {
     [Header("Canvas")]
     public GameObject canvasPreguntas;
+    public GameObject canvasOsorio;
+    public GameObject panelInfo;
+    public GameObject panelDespues;
 
     [Header("Tilemaps")]
     public GameObject tilemapMapa;
@@ -22,10 +25,30 @@ public class TriggerActivity : MonoBehaviour
             tilemapMapa.SetActive(false);
             player.SetActive(false);
 
-            canvasPreguntas.SetActive(true);
+            canvasOsorio.SetActive(true);
             tilemapActividad.SetActive(true);
 
             triggerActividad.SetActive(false);
         }
+    }
+
+    public void ActivarPreguntas()
+    {
+        canvasPreguntas.SetActive(true);
+        canvasOsorio.SetActive(false);
+    }
+
+    public void ActivarInfo()
+    {
+        panelDespues.SetActive(false);
+        panelInfo.SetActive(true);
+    }
+
+    public void ActivarMapa()
+    {
+        canvasOsorio.SetActive(false);
+        tilemapMapa.SetActive(true);
+        tilemapActividad.SetActive(false);
+        player.SetActive(true);
     }
 }
