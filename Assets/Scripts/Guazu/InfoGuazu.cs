@@ -1,30 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class InfoGuazu : MonoBehaviour
 {
     public GameObject canvasInfo;
-    public GameObject tilemapMapa;
-    public GameObject player;
+    public GameObject panelInfo;
+    public GameObject panelOsorio;
     public GameObject guazu;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            tilemapMapa.SetActive(false);
             canvasInfo.SetActive(true);
-            player.SetActive(false);
         }
     }
 
     public void ApagarInfo()
     {
-        tilemapMapa.SetActive(true);
-        canvasInfo.SetActive(false);
-        player.SetActive(true);
+        panelInfo.SetActive(false);
+        panelOsorio.SetActive(true);
 
-        guazu.GetComponent<BoxCollider2D>().isTrigger = false;
+        Destroy(guazu.GetComponent<BoxCollider2D>());
+    }
+
+    public void ApagarOsorio()
+    {
+        canvasInfo.SetActive(false);
     }
 }
