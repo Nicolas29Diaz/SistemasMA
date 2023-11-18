@@ -50,6 +50,8 @@ public class verCaracteristicasCapybara : MonoBehaviour
         caracteristicasCapybara.SetActive(false);
     }
 
+    
+
     // Update is called once per frame
     void Update()
     {
