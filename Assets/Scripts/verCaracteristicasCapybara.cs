@@ -9,24 +9,33 @@ public class verCaracteristicasCapybara : MonoBehaviour
     [SerializeField] private GameObject jugador;
 
     [SerializeField] PlayerMovement movimientoJugador;
+
+    public bool escenaTigre = false;
+    public string playerName;
     void Start()
     {
-        
-        movimientoJugador = GameObject.Find("Player").GetComponent<PlayerMovement>();
-        jugador = GameObject.Find("Player");
+        playerName = GlobalGameController.instance.GetPjSelected();
+        movimientoJugador = GameObject.Find(playerName).GetComponent<PlayerMovement>();
+        jugador = GameObject.Find(playerName);
     }
 
-    private void Awake()
-    {
-        
-        movimientoJugador = GameObject.Find("Player").GetComponent<PlayerMovement>();
-        jugador = GameObject.Find("Player");
-    }
+    //private void Awake()
+    //{
+    //    playerName = GlobalGameController.instance.GetPjSelected();
+    //    movimientoJugador = GameObject.Find(playerName).GetComponent<PlayerMovement>();
+    //    jugador = GameObject.Find(playerName);
+    //}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.transform.name == ("Player"))
+       
+
+        if(collision.transform.name == (playerName))
         {
+            if (escenaTigre)
+            {
+                jugador.SetActive(false);
+            }
             caracteristicasCapybara.SetActive(true);
             
 
@@ -50,11 +59,19 @@ public class verCaracteristicasCapybara : MonoBehaviour
         caracteristicasCapybara.SetActive(false);
     }
 
+    public void DesactivarPlayer()
+    {
+        playerName = GlobalGameController.instance.GetPjSelected();
+        movimientoJugador = GameObject.Find(playerName).GetComponent<PlayerMovement>();
+        jugador = GameObject.Find(playerName);
+
+        jugador.SetActive(false);
+    }
     
 
     // Update is called once per frame
     void Update()
     {
-        
+     
     }
 }
