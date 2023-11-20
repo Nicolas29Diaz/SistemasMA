@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D playerRb;
     private Vector2 moveInput;
     private Animator playerAnimator;
+    public FixedJoystick joystick;
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
@@ -18,8 +19,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        float moveX = joystick.Horizontal;
+        float moveY = joystick.Vertical;
         moveInput = new Vector2(moveX, moveY).normalized;
 
         playerAnimator.SetFloat("Horizontal", moveX);
