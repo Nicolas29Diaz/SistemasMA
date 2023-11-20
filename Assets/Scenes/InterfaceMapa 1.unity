@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -846,10 +846,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2447004877104262337, guid: 56d7afdb450b2ac4eb9d11ebb1252d89, type: 3}
-      propertyPath: level
-      value: Argentina
-      objectReference: {fileID: 0}
     - target: {fileID: 2447004877104262339, guid: 56d7afdb450b2ac4eb9d11ebb1252d89, type: 3}
       propertyPath: m_Name
       value: CountrySelector (2)
@@ -1190,13 +1186,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2447004877104262337, guid: 56d7afdb450b2ac4eb9d11ebb1252d89, type: 3}
-      propertyPath: level
-      value: Peru
-      objectReference: {fileID: 0}
     - target: {fileID: 2447004877104262339, guid: 56d7afdb450b2ac4eb9d11ebb1252d89, type: 3}
       propertyPath: m_Name
       value: CountrySelector (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2447004877104262366, guid: 56d7afdb450b2ac4eb9d11ebb1252d89, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: MapaPeru_Cantuta
       objectReference: {fileID: 0}
     - target: {fileID: 2447004877104262367, guid: 56d7afdb450b2ac4eb9d11ebb1252d89, type: 3}
       propertyPath: m_Sprite
@@ -1312,10 +1308,6 @@ PrefabInstance:
     - target: {fileID: 2447004877104262336, guid: 56d7afdb450b2ac4eb9d11ebb1252d89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2447004877104262337, guid: 56d7afdb450b2ac4eb9d11ebb1252d89, type: 3}
-      propertyPath: level
-      value: Brazil
       objectReference: {fileID: 0}
     - target: {fileID: 2447004877104262339, guid: 56d7afdb450b2ac4eb9d11ebb1252d89, type: 3}
       propertyPath: m_Name

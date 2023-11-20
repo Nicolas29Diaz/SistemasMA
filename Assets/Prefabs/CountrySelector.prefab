@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2447004877104262364}
   - component: {fileID: 2447004877104262367}
   - component: {fileID: 2447004877104262366}
-  - component: {fileID: 2447004877104262337}
+  - component: {fileID: 2143466047524186520}
   m_Layer: 5
   m_Name: CountrySelector
   m_TagString: Untagged
@@ -123,19 +123,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2447004877104262337}
-        m_TargetAssemblyTypeName: SelectordePais, Assembly-CSharp
-        m_MethodName: OpenScene
-        m_Mode: 1
+      - m_Target: {fileID: 2143466047524186520}
+        m_TargetAssemblyTypeName: CambiarEscena, Assembly-CSharp
+        m_MethodName: Cambiar
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: MapaCarpincho
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2447004877104262337
+--- !u!114 &2143466047524186520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,11 +144,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2447004877104262339}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6899dfc0abbf024a9c87be7fee9c575, type: 3}
+  m_Script: {fileID: 11500000, guid: 9394bb1e4871b894c93081f612a47adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 
-  text: {fileID: 0}
+  escenas: 0
 --- !u!1 &2447004878524830817
 GameObject:
   m_ObjectHideFlags: 0

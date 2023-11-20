@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MinijuegoPeru_ArbolDeQuina : MonoBehaviour
@@ -36,6 +37,7 @@ public class MinijuegoPeru_ArbolDeQuina : MonoBehaviour
                 arbol.sprite = arbol3;
 
                 detector.gameObject.SetActive(false);
+                StartCoroutine(ChangeSceneAfterDelay(1f));
                 break;
             default:
                 break;
@@ -54,6 +56,15 @@ public class MinijuegoPeru_ArbolDeQuina : MonoBehaviour
     {
         message.gameObject.SetActive(false);
         detector.gameObject.SetActive(true);
+    }
+
+    IEnumerator ChangeSceneAfterDelay(float delayInSeconds)
+    {
+        yield return new WaitForSeconds(delayInSeconds);
+
+        // Cambia de escena aquí
+        // Asegúrate de tener la escena que deseas cargar en el Editor de Unity.
+        SceneManager.LoadScene("MapaPuya");
     }
 
 

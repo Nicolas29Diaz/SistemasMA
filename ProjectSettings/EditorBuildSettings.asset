@@ -14,8 +14,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Interfaces/Interface Yaguarete.unity
     guid: a8e8d9cf7dadebe4eaa5db7f6ef527b8
-  - enabled: 0
-    path: Assets/Scenes/Interfaces/InterfaceMapa 1.unity
+  - enabled: 1
+    path: Assets/Scenes/InterfaceMapa 1.unity
     guid: 6992c0d6bed54144db847cc420b11bbe
   - enabled: 0
     path: Assets/Scenes/Interfaces/InterfacePeru.unity
@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MapaBrasil.unity
     guid: 0f551109bc4c84d4fbea7775b78dfb5d
   - enabled: 1
-    path: Assets/Scenes/MinijuegoBrazil.unity
+    path: Assets/Scenes/Brasil/MinijuegoBrazil.unity
     guid: cf457a82ca4dafe4c8671be13b72cb68
   - enabled: 1
     path: Assets/Scenes/Brasil/MapaNandu.unity
@@ -48,6 +48,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Argentina/MapaGuaran.unity
     guid: 2457256968ed1c541835bc3517916f9a
   - enabled: 1
-    path: Assets/Scenes/MapaYaguarate.unity
+    path: Assets/Scenes/Argentina/MapaYaguarate.unity
     guid: 0d06791de8a68454d867e9ed60df735a
+  - enabled: 1
+    path: Assets/Scenes/Argentina/MapaCarpincho.unity
+    guid: b84d3e9101435ba48b0a0278258713ea
+  - enabled: 1
+    path: Assets/Scenes/Peru/MinijuegoPeru_Cantuta.unity
+    guid: 1fe0b1f9c9b425a4c9cb9228e34ec789
+  - enabled: 1
+    path: Assets/Scenes/Peru/MapaPeru_ArbolDeQuina.unity
+    guid: 7825dd06ead5c254ea2500184e1713a2
+  - enabled: 1
+    path: Assets/Scenes/Peru/MinijuegoPeru_ArbolDeQuina.unity
+    guid: 8195923ad9e559144b3f6ebae6f71980
+  - enabled: 1
+    path: Assets/Scenes/Peru/MapaPeru_Cantuta.unity
+    guid: 968b60fe58c0e134984645cace50da48
+  - enabled: 1
+    path: Assets/Scenes/Peru/MapaPuya.unity
+    guid: 9804a6a16f427a84ab4fd13fa7f7ef3f
   m_configObjects: {}

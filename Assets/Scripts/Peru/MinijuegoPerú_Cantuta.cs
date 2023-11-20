@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class MinijuegoPerú_Cantuta : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -36,10 +36,14 @@ public class MinijuegoPerú_Cantuta : MonoBehaviour
         {
             // Hacer visible la imagen
             regaderaImage.gameObject.SetActive(true);
-            if (contador != 9)
+            if (contador != 5)
             {
 
                 contador = contador + 1;
+
+                progreso.value = contador;
+                // Comenzar la rotación
+                StartCoroutine(RotateAndHideImage());
             }
 
 
@@ -49,7 +53,7 @@ public class MinijuegoPerú_Cantuta : MonoBehaviour
                 planta.sprite = plantaLv1;
             }
 
-            if (contador == 5)
+            if (contador == 3)
             {
                 planta.transform.position = planta.transform.position + new Vector3(0, 25, 0);
                 RectTransform rectTransform = planta.GetComponent<RectTransform>();
@@ -58,14 +62,19 @@ public class MinijuegoPerú_Cantuta : MonoBehaviour
                 planta.sprite = plantaLv2;
             }
 
-            if (contador == 9)
+            if (contador == 4)
             {
                 flor.gameObject.SetActive(true);
+
             }
 
-            progreso.value = contador;
-            // Comenzar la rotación
-            StartCoroutine(RotateAndHideImage());
+            if (contador == 5)
+            {
+                SceneManager.LoadScene("MapaPeru_ArbolDeQuina");
+            }
+
+
+           
         }
     }
 
