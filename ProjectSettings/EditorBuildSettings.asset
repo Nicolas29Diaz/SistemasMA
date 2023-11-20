@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Interfaces/InterfaceBrazil.unity
     guid: 3d3480beaae4890428b8e42997122739
   - enabled: 1
-    path: Assets/Scenes/MapaBrasil.unity
+    path: Assets/Scenes/Brasil/MapaBrasil.unity
     guid: 0f551109bc4c84d4fbea7775b78dfb5d
   - enabled: 1
     path: Assets/Scenes/Brasil/MinijuegoBrazil.unity
@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Brasil/MapaNandu.unity
     guid: 67d50ff66398afe4ca4e4546eb0efef0
   - enabled: 0
-    path: Assets/Scenes/MapaBrasil2.unity
+    path: Assets/Scenes/Brasil/MapaBrasil2.unity
     guid: 8d8cbea74af3e9b4682c35059415a47e
   - enabled: 0
     path: 
@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Peru/MapaPuya.unity
     guid: 9804a6a16f427a84ab4fd13fa7f7ef3f
+  - enabled: 1
+    path: Assets/Scenes/Mapa.unity
+    guid: 31459d126b2719340923f60ce3b897a6
   m_configObjects: {}
