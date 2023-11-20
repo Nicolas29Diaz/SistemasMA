@@ -23,26 +23,7 @@ public class TriggerActivity : MonoBehaviour
 
     private string playerName;
 
-    //private void Update()
-    //{
-    //    if (!findP)
-    //    {
-    //        playerName = GlobalGameController.instance.GetPjSelected();
-    //        player = GameObject.Find(playerName);
-    //        findP = true;
-    //    }
-    //}
-    private void Awake()
-    {
-        playerName = GlobalGameController.instance.GetPjSelected();
-        player = GameObject.Find(playerName);
-    }
-
-    private void Start()
-    {
-        playerName = GlobalGameController.instance.GetPjSelected();
-        player = GameObject.Find(playerName);
-    }
+  
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

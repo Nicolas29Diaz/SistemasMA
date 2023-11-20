@@ -657,6 +657,11 @@ MonoBehaviour:
   ConformX: 1
   ConformY: 1
   Logging: 0
+--- !u!1 &76491286 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8997857248670585105, guid: 956b731efa87b7246ac0ccdb0079fbda, type: 3}
+  m_PrefabInstance: {fileID: 1847334834}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &90228308
 GameObject:
   m_ObjectHideFlags: 0
@@ -27683,9 +27688,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   caracteristicasCapybara: {fileID: 1378730833}
-  jugador: {fileID: 0}
+  jugador: {fileID: 76491286}
   movimientoJugador: {fileID: 1990042068}
-  escenaTigre: 1
   playerName: 
 --- !u!212 &955318161
 SpriteRenderer:
@@ -32446,6 +32450,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1378730833}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 76491286}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6

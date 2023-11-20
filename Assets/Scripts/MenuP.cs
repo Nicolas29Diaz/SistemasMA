@@ -157,6 +157,11 @@ public class MenuP : MonoBehaviour
         // Asigna este método al evento onClick del botón en el Inspector de Unity
     public void CambiarEscena()
     {
+        if(GlobalGameController.instance != null)
+        {
+            Destroy(GlobalGameController.instance);
+        }
+
         Debug.Log("Cambiando a la escena: " + Inicio); // Esto es opcional, solo para verificar en el Editor
 
         // Carga la nueva escena

@@ -11,6 +11,7 @@ public class GlobalGameController : MonoBehaviour
     [SerializeField] private Sprite personaje;
     private void Awake()
     {
+
         if (GlobalGameController.instance == null)
         {
             GlobalGameController.instance = this;
@@ -34,7 +35,7 @@ public class GlobalGameController : MonoBehaviour
     {
         pjSelected = pjSelectedName;
     }
-
+        
     public string GetPjSelected()
     {
         return pjSelected;  

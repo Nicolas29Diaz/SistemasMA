@@ -952,7 +952,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1499805248}
+      - m_Target: {fileID: 1819524418}
         m_TargetAssemblyTypeName: TriggerActivity, Assembly-CSharp
         m_MethodName: ApagarCanvas
         m_Mode: 1
@@ -4475,7 +4475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 23.52301
+      value: 23.52295
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -11796,6 +11796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Personajes
       objectReference: {fileID: 0}
+    - target: {fileID: 8997857248670585105, guid: 956b731efa87b7246ac0ccdb0079fbda, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8997857248670585119, guid: 956b731efa87b7246ac0ccdb0079fbda, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -13006,7 +13010,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &1187163973
 RectTransform:
@@ -13049,7 +13053,7 @@ MonoBehaviour:
   tilemapMapa: {fileID: 394759349}
   tilemapActividad: {fileID: 476173789}
   triggerActividad: {fileID: 1819524417}
-  player: {fileID: 0}
+  player: {fileID: 1212858244}
 --- !u!1 &1187376887
 GameObject:
   m_ObjectHideFlags: 0
@@ -13358,6 +13362,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206605447}
   m_CullTransparentMesh: 1
+--- !u!1 &1212858244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8997857248670585105, guid: 956b731efa87b7246ac0ccdb0079fbda, type: 3}
+  m_PrefabInstance: {fileID: 1059733019}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1230416234
 GameObject:
   m_ObjectHideFlags: 0
@@ -14285,7 +14294,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!224 &1350883602
 RectTransform:
@@ -15203,59 +15212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1499805247
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1499805249}
-  - component: {fileID: 1499805248}
-  m_Layer: 0
-  m_Name: PlayerFind
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1499805248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499805247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 431f912d830980440914595445c57d1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvasPreguntas: {fileID: 1350883597}
-  canvasInfo: {fileID: 1187163969}
-  panelAntes: {fileID: 1466398654}
-  panelDespues: {fileID: 1877037639}
-  panelFinal: {fileID: 233837560}
-  tilemapMapa: {fileID: 394759349}
-  tilemapActividad: {fileID: 476173789}
-  triggerActividad: {fileID: 1819524417}
-  player: {fileID: 0}
---- !u!4 &1499805249
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499805247}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 961.3545, y: 540.26495, z: 2.2857513}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1513750663
 GameObject:
   m_ObjectHideFlags: 0
@@ -17504,7 +17460,7 @@ MonoBehaviour:
   tilemapMapa: {fileID: 394759349}
   tilemapActividad: {fileID: 476173789}
   triggerActividad: {fileID: 1819524417}
-  player: {fileID: 0}
+  player: {fileID: 1212858244}
 --- !u!61 &1819524419
 BoxCollider2D:
   m_ObjectHideFlags: 0

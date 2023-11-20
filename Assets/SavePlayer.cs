@@ -12,11 +12,11 @@ public class SavePlayer : MonoBehaviour
         player = GameObject.Find(playerName);
     }
 
-    //private void Start()
-    //{
-    //    playerName = GlobalGameController.instance.GetPjSelected();
-    //    player = GameObject.Find(playerName);
-    //}
+    private void Start()
+    {
+        playerName = GlobalGameController.instance.GetPjSelected();
+        player = GameObject.Find(playerName);
+    }
 
     public void DesactivarPlayer()
     {
