@@ -70,14 +70,21 @@ public class MinijuegoPerú_Cantuta : MonoBehaviour
 
             if (contador == 5)
             {
-                SceneManager.LoadScene("MapaPeru_ArbolDeQuina");
+                StartCoroutine(ChangeSceneAfterDelay(1f));
             }
 
 
            
         }
     }
+    IEnumerator ChangeSceneAfterDelay(float delayInSeconds)
+    {
+        yield return new WaitForSeconds(delayInSeconds);
 
+        // Cambia de escena aquí
+        // Asegúrate de tener la escena que deseas cargar en el Editor de Unity.
+        SceneManager.LoadScene("MapaPeru_ArbolDeQuina");
+    }
     private IEnumerator RotateAndHideImage()
     {
         isRotating = true;
