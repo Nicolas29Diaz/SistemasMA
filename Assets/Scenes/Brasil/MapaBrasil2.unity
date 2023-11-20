@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.12107852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &50037422 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2380059742378249532, guid: c1088576945b91a4ca53e3386b2c80fb, type: 3}
-  m_PrefabInstance: {fileID: 1824118993}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &215801158
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,7 +1257,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 40
+  field of view: 79.9
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1288,11 +1283,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364597583}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.13999987, y: 0.26000002, z: -10}
+  m_LocalPosition: {x: 0, y: 1.70017, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 50037422}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &680793602
@@ -2473,7 +2468,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1010697097
 MonoBehaviour:
@@ -17246,7 +17241,7 @@ Transform:
   - {fileID: 215801159}
   - {fileID: 680793603}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1824118993
 PrefabInstance:
@@ -17261,7 +17256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2380059742378249532, guid: c1088576945b91a4ca53e3386b2c80fb, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2380059742378249532, guid: c1088576945b91a4ca53e3386b2c80fb, type: 3}
       propertyPath: m_LocalPosition.x

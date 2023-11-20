@@ -16,4 +16,9 @@ public class CambiarEscena : MonoBehaviour
             SceneManager.LoadScene(escenas);
         
     }
+
+    public void Salir()
+    {
+        Application.Quit();
+    }
 }
