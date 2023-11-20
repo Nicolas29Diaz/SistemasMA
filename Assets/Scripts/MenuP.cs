@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class MenuP : MonoBehaviour
 {
@@ -13,6 +14,12 @@ public class MenuP : MonoBehaviour
     public GameObject Tareas2UI;
     public GameObject MapaUI;
     public GameObject MBrazilUI;
+
+    public GameObject MArgUI;
+
+    public GameObject MperuUI;
+
+    public string Inicio; // Nombre de la nueva escena a cargar
     
 
     private bool juegoPausado = false;
@@ -122,6 +129,38 @@ public class MenuP : MonoBehaviour
     {
         MBrazilUI.SetActive(false);
        
+    }
+
+    public void AbrirMA()
+    {
+        MArgUI.SetActive(true);
+       
+    }
+
+    public void CerrarMA()
+    {
+        MArgUI.SetActive(false);
+       
+    }
+
+    public void AbrirMP()
+    {
+        MperuUI.SetActive(true);
+       
+    }
+
+    public void CerrarMP()
+    {
+        MperuUI.SetActive(false);
+       
+    }
+        // Asigna este método al evento onClick del botón en el Inspector de Unity
+    public void CambiarEscena()
+    {
+        Debug.Log("Cambiando a la escena: " + Inicio); // Esto es opcional, solo para verificar en el Editor
+
+        // Carga la nueva escena
+        SceneManager.LoadScene(Inicio);
     }
 }
 
